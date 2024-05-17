@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Javascript</title>
-  <script src="./funcionalidad.js"></script>
-</head>
-<body>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus temporibus non commodi velit quod voluptatibus, iure exercitationem laudantium alias aut odit eaque, tempora ducimus amet impedit consequuntur? Quaerat nisi vel voluptatibus, alias ea quas deserunt incidunt at saepe atque sunt sit, dolorem eum ipsum quo aut temporibus officia ullam! Quae cupiditate possimus non. Iusto delectus, aliquid labore cupiditate minus accusamus earum dolorem sequi nobis sed quis nesciunt consequatur modi odit neque laboriosam fuga nam, ab magni. Iusto magni doloribus culpa voluptate est praesentium maxime quisquam beatae quos, dicta, fugit, quo illum sapiente eius quia impedit sit consequuntur repellat neque perspiciatis!
-  </p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./funcionalidad.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <p>HELADERIA "ANIMATE A PROGRAMAR 2024"</p>
+    </header>
+    <main>
+      <div class="primero">
+
+        <div class="tamanios">
+          <p>SELECCIONE EL TAMAÑO</p>
+
+          <form id="tamanios">
+            <input type="radio" id="bocha1" name="tamanio" value="1 bocha">
+            <label for="bocha1">1 bocha ... $10.-</label><br>
+            
+            <input type="radio" id="bocha2" name="tamanio" value="2 bochas">
+            <label for="bocha2">2 bochas ... $18.-</label><br>
+            
+            <input type="radio" id="bocha3" name="tamanio" value="3 bochas">
+            <label for="bocha3">3 bochas ... $27.-</label><br>
+
+            <input type="radio" id="conoDulce" name="tamanio" value="Cono Dulce">
+            <label for="conoDulce">Cono dulce ... $33.-</label><br>
+
+            <input type="radio" id="tasita" name="tamanio" value="Tasita">
+            <label for="tasita">Tasita ... $30.-</label><br>
+
+            <input type="radio" id="cuartoK" name="tamanio" value="1/4 Kg">
+            <label for="cuartoK">1/4 Kilo ... $35.-</label><br>
+
+            <input type="radio" id="medioK" name="tamanio" value="1/2 Kg">
+            <label for="medioK">1/2 Kilo ... $65.-</label><br>
+
+            <input type="radio" id="unK" name="tamanio" value="1 Kg">
+            <label for="unK">1 Kilo ... $120.-</label><br>
+          </form>
+        </div>
+          
+        <div class="sabores">
+          <p>SELECCIONE LOS SABORES</p>
+
+          <form id="gustos">
+            <input type="checkbox" id="frutilla" value="frutilla">Frutilla
+            <br>
+            <input type="checkbox" id="naranja" value="naranja">Naranja
+            <br>
+            <input type="checkbox" id="limon" value="limon">Limon
+            <br>
+            <input type="checkbox" id="ddleche" value="ddleche">Dulce de leche
+            <br>
+            <input type="checkbox" id="chocolate" value="chocolate">Chocolate
+            <br>
+            <input type="checkbox" id="vainilla" value="vainilla">Vainilla
+            <br>
+            <input type="checkbox" id="tramontana" value="tramontana">Tramontana
+            <br>
+            <input type="checkbox" id="fdbosque" value="fdbosque">Frutos del bosque
+            <br>
+            <input type="checkbox" id="cdalmendra" value="cdalmendra">Crema de almendras
+          </form>
+        </div>
+          
+        <div class="toppings">
+          <p>SELECCIONE EL TOPPING</p>
+
+          <form id="toppings">
+            <input type="radio" id="oreo" name="topping" value="Oreo">
+            <label for="oreo">Oreo ... $5.-</label><br>
+            
+            <input type="radio" id="kitkat" name="topping" value="KitKat">
+            <label for="kitkat">KitKat ... $6.-</label><br>
+            
+            <input type="radio" id="kinder" name="topping" value="Kinder">
+            <label for="kinder">Kinder ... $7.-</label><br>
+          </form>
+        </div>
+        
+        <div class="boton">
+          <button type="button" onclick="calcularPrecio()">Comprar</button>
+        </div>
+        
+      </div>
+    </main>    
+  </body>
 </html>
